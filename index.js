@@ -196,8 +196,7 @@ try {
 		// a = b;
 		// b = tmp;
 
-		a = 2
-		b = 1
+		[a,b] = [b,a]
 
 		// Don't make changes below this line	
 		
@@ -281,15 +280,10 @@ try {
 		const norwegian = true;
 		
 		// Remove all unnecesary syntax to let the test pass.
-		// let city = {
-		// 	name: name,
-		// 	age: age,
-		// 	dutch: !norwegian
-		// };
 		let city = {
-			name,
-			age,
-			dutch: false
+			name: name,
+			age: age,
+			dutch: !norwegian
 		};
 
 		// Don't make changes below this line	
